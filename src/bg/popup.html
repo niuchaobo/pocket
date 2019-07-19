@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/checkbox.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.mloading.css" />
+    <title data-i18n="optTitle">Online Dictionary Helper</title>
+</head>
+
+<body>
+<div class='container'>
+    <form>
+        <div class="grouppanel">
+            <div class="div-inline">
+                <input type="text" data-i18n="searchWord" name="searchWord" id="searchWord" placeholder="please input...">
+                <img style="display: none;vertical-align: middle;border-radius: 15px;" width="20px" height="20px" id="wxhead" src="">
+                <input class="button" type="button" data-i18n="searchWordButton" name="search" id="search"
+                       value="search">
+            </div>
+
+            <hr/>
+            <div class="crosspanel">
+                <label data-i18n="baEnabled">Enabled</label>
+                <div class="enabled">
+                    <input type="checkbox" value=true id="enabled">
+                    <label for="enabled"></label>
+                </div>
+
+                <label data-i18n="baHotKey">AuoSel.</label>
+                <select id="hotkey">
+                    <option value="0">Off</option>
+                    <option value="16">Shift</option>
+                    <option value="17">Ctrl</option>
+                    <option value="18">Alt</option>
+                </select>
+                <div id="wxdiv">
+                    <label data-i18n="collect">扫码开启收藏功能</label>
+                    <div class="enabled">
+                        <input type="checkbox" value=true id="wxenabled">
+                        <label for="wxenabled"></label>
+                    </div>
+                    <div class="div-inline" id="qrcode">
+                        <img src="" width="280px" height="280px">
+                        <div id='ncb-shade' style='display:none;width: 100%;height: 20px;'>
+                            <span style='font-size:20px;text-align:center;display:block;'>
+                            <img style='vertical-align: middle' width='20px' height='20px' src='../fg/img/ok.png'>登录成功</span>
+                        </div>
+                        <div id='ncb-shade-timeout' style='display:none;width: 100%;height: 20px;'>
+                            <span style='font-size:20px;text-align:center;display:block;'>
+                            <img style='vertical-align: middle' width='20px' height='20px' src='../fg/img/timeout.png'>登录超时</span>
+                        </div>
+                    </div>
+                </div>
+                <hr class="anki-options">
+                <select id="deckname" class="anki-options col-2x">
+                    <option value=""></option>
+                </select>
+                <hr>
+
+                <select id="dict" class="col-2x" style="display: none">
+                    <option value="encn-Default">encn-Default</option>
+                </select>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!--script src="js/polyfill.js"></script-->
+<script src="../lib/jquery-2.2.2.min.js"></script>
+<script src="js/jqueryExtend.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/popup.js"></script>
+<script src="../fg/js/spell.js"></script>
+<script type="text/javascript" src="js/jquery.mloading.js"></script>
+<!--<script src="../fg/js/frame.js"></script>-->
+</body>
+
+</html>

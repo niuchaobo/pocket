@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, "Microsoft Yahei", sans-serif;
+    font-size: 12px;
+    width: 300px;
+    border-radius: 5px;
+    margin: 2px 4px;
+    padding: 0;
+}
+
+.container {
+    margin: 0;
+    padding: 0;
+}
+
+.grouppanel {
+    border-radius: 5px;
+    background-color: #f8f2e3;
+    margin: 5px 0;
+    padding: 0 0 3px;
+}
+
+.grouptitle {
+    font-weight: bold;
+    color: white;
+    background-color: #93a085;
+    border-radius: 5px 5px 0 0;
+    margin: 0 0 4px;
+    padding: 4px 15px;
+}
+
+.crosspanel {
+    /*padding: 0 6px;*/
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.more {
+    float: right;
+    color: white;
+    cursor: pointer;
+}
+
+label,
+select {
+    width: 135px;
+    padding: 4px 5px;
+    margin: 3px;
+    display: inline-block;
+    color: black;
+    border: 1px solid #d5d5d5;
+    border-radius: 4px;
+}
+
+label {
+    border-style: dashed;
+}
+
+.col-2x {
+    width: 240px;
+}
+
+hr {
+    border: 1px;
+    margin: 4px 5px;
+    border-top: 1px solid #e5e5e5;
+}
+
+input[type="text"] {
+    border: 1px solid #DADADA;
+    color: #888;
+    height: 30px;
+    margin-right: 0px;
+    margin-top: 2px;
+    outline: 0 none;
+    padding: 3px 3px 3px 5px;
+    width: 70%;
+    font-size: 12px;
+    line-height: 15px;
+    box-shadow: inset 0px 1px 4px #ECECEC;
+    -moz-box-shadow: inset 0px 1px 4px #ECECEC;
+    -webkit-box-shadow: inset 0px 1px 4px #ECECEC;
+}
+
+.button {
+    background: #E27575;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    color: #FFF;
+    box-shadow: 1px 1px 5px #B6B6B6;
+    border-radius: 3px;
+    text-shadow: 1px 1px 1px #9E3F3F;
+    cursor: pointer;
+    width:55px;
+}
+
+.div-inline {
+    padding: 0 6px;
+    width: 100%;
+    display: inline;
+}
+
+.detail {
+    font-size: 0.8em;
+    list-style: square inside;
+    margin: 3px 0;
+    padding: 3px;
+    background: rgba(161, 50, 120, 0.1);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.message {
+    font-size: 1.0em;
+    list-style: square inside;
+    margin: 3px 0;
+    padding: 3px;
+    background: rgba(91, 210, 248, 0.51);
+    border-radius: 5px;
+    cursor: pointer;
+}
+#success_login{
+    opacity:0.5;/*其他，透明度50%*/
+    z-index:99;
+    display: none;
+}
+
